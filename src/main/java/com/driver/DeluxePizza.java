@@ -8,19 +8,8 @@ public class DeluxePizza extends Pizza {
     private boolean parcel;
     public DeluxePizza(Boolean isVeg) {
         super(isVeg);
-        this.parcel=false;
-        setExtracheese(false);
-        setToppings(false);
-        // your code goes here
-        if(isVeg){
-            this.price=300+80+70;
-            this.bill=Integer.toString(this.price);
-        }
-        else{
-           this.price=400+80+120;
-            this.bill=Integer.toString(this.price);
-        }
-        setPrice(this.price);
-        setBill(this.bill);
+        addExtraCheese();
+        addExtraToppings();
+
     }
 }
